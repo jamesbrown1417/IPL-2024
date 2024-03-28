@@ -8,6 +8,12 @@ library(glue)
 # URL of website
 sportsbet_url = "https://www.sportsbet.com.au/betting/cricket/twenty20-ipl"
 
+# Squads 2024
+ipl_squads_2024 <- read_csv("Data/ipl_squads_2024.csv")
+
+# Function to fix team names
+source("Scripts/07-fix-team-names.R")
+
 #===============================================================================
 # Use rvest to get main market information-------------------------------------#
 #===============================================================================
@@ -23,7 +29,7 @@ main_markets_function <- function() {
   get_team_names <- function(match) {
     team_names <-
       match |>
-      html_nodes(".participantText_fivg86r") |>
+      html_nodes(".normal_fgzdi7m") |>
       html_text()
     
     # Home team and Away Team
@@ -110,7 +116,7 @@ player_props_function <- function() {
   get_team_names <- function(match) {
     team_names <-
       match |>
-      html_nodes(".participantText_fivg86r") |>
+      html_nodes(".normal_fgzdi7m") |>
       html_text()
     
     # Home team and Away Team
@@ -121,12 +127,11 @@ player_props_function <- function() {
     tibble(home_team, away_team)
   }
   
-  
   # Get match links
   match_links <-
     sportsbet_url |>
     read_html() |>
-    html_nodes(".linkMultiMarket_fcmecz0") |>
+    html_nodes(".link_ft4u1lp") |>
     html_attr("href")
   
   # Get match IDs from links
@@ -241,77 +246,6 @@ player_props_function <- function() {
     left_join(team_names, by = "match_id") |>
     mutate(match = paste(home_team, "v", away_team))
   
-  # Get home team top runscorer
-  home_top_runscorer <-
-    top_run_scorers_data |>
-    filter(str_detect(prop_market_name, "Top .* Runscorer")) |>
-    mutate(player_team = str_remove(prop_market_name, "Top ")) |>
-    mutate(player_team = str_remove(player_team, " Runscorer")) |>
-    filter(player_team == home_team) |>
-    transmute(
-      match,
-      market = "Top Team Runscorer",
-      home_team,
-      away_team,
-      player_name = selection_name_prop,
-      player_team,
-      opposition_team = away_team,
-      price = prop_market_price
-    )
-  
-  
-  # Get away team top runscorer
-  away_top_runscorer <-
-    top_run_scorers_data |>
-    filter(str_detect(prop_market_name, "Top .* Runscorer")) |>
-    mutate(player_team = str_remove(prop_market_name, "Top ")) |>
-    mutate(player_team = str_remove(player_team, " Runscorer")) |>
-    filter(player_team == away_team) |>
-    transmute(
-      match,
-      market = "Top Team Runscorer",
-      home_team,
-      away_team,
-      player_name = selection_name_prop,
-      player_team,
-      opposition_team = home_team,
-      price = prop_market_price
-    )
-  
-  # Combine
-  top_team_runscorer <-
-    bind_rows(home_top_runscorer, away_top_runscorer) |>
-    mutate(
-      player_name = case_when(player_name == "Tom Rogers (Stars)" ~ "Tom F Rogers",
-                              .default = player_name)
-    )
-  
-  # Player of the match
-  player_of_the_match <-
-    top_run_scorers_data |>
-    filter(str_detect(prop_market_name, "Player of the Match")) |>
-    transmute(
-      match,
-      market = prop_market_name,
-      home_team,
-      away_team,
-      player_name = selection_name_prop,
-      price = prop_market_price
-    ) |>
-    mutate(
-      player_name = case_when(
-        player_name == "Tom Rogers (Stars)" ~ "Tom F Rogers",
-        player_name == "Tom Rogers." ~ "Tom Rogers",
-        .default = player_name
-      )
-    )
-  
-  # Write to csv----------------------------------------------------------------
-  write_csv(player_of_the_match,
-            "Data/scraped_odds/sportsbet_player_of_the_match.csv")
-  write_csv(top_team_runscorer,
-            "Data/scraped_odds/sportsbet_top_team_runscorer.csv")
-  
   #===============================================================================
   # Player Runs
   #===============================================================================
@@ -344,7 +278,8 @@ player_props_function <- function() {
       player_name = str_remove(selection_name_prop, " - Over"),
       line = handicap,
       over_price = prop_market_price
-    )
+    ) |> 
+    mutate(player_name = str_remove(player_name, " Over$"))
   
   player_runs_unders <-
     player_runs_data |>
@@ -358,7 +293,8 @@ player_props_function <- function() {
       player_name = str_remove(selection_name_prop, " - Under"),
       line = handicap,
       under_price = prop_market_price
-    )
+    ) |> 
+    mutate(player_name = str_remove(player_name, " Under$"))
   
   player_runs_combined <-
     player_runs_overs |>
@@ -375,10 +311,7 @@ player_props_function <- function() {
     ) |>
     mutate(
       player_name = case_when(
-        player_name == "Tom Rogers (Stars)" ~ "Tom F Rogers",
-        player_name == "Tom Rogers." ~ "Tom Rogers",
-        player_name == "Matt Renshaw" ~ "Matthew Renshaw",
-        player_name == "Oliver Davies" ~ "Ollie Davies",
+        player_name == "Francois du Plessis" ~ "Faf du Plessis",
         .default = player_name
       )
     ) |>
@@ -386,26 +319,24 @@ player_props_function <- function() {
   
   # Player runs alternative lines
   player_runs_alternative_lines <-
-    player_runs_data |>
-    filter(str_detect(prop_market_name, "To Score")) |>
+    top_run_scorers_data |>
+    filter(str_detect(prop_market_name, "Player Multis")) |>
+    filter(str_detect(selection_name_prop, "\\+ Runs$")) |>
     mutate(prop_market_name = str_replace(prop_market_name, "Fifty", "50")) |>
     transmute(
       match,
       market = "Player Runs",
       home_team,
       away_team,
-      player_name = str_remove(selection_name_prop, " - Over"),
-      line = str_extract(prop_market_name, "[0-9]{1,3}"),
+      player_name = str_remove(selection_name_prop, " \\d+\\+ Runs$"),
+      line = str_extract(selection_name_prop, "[0-9]{1,3}"),
       over_price = prop_market_price
     ) |>
     mutate(line = as.numeric(line) - 0.5) |>
     mutate(agency = "Sportsbet") |>
     mutate(
       player_name = case_when(
-        player_name == "Tom Rogers (Stars)" ~ "Tom F Rogers",
-        player_name == "Tom Rogers." ~ "Tom Rogers",
-        player_name == "Matt Renshaw" ~ "Matthew Renshaw",
-        player_name == "Oliver Davies" ~ "Ollie Davies",
+        player_name == "Francois du Plessis" ~ "Faf du Plessis",
         .default = player_name
       )
     )
@@ -414,234 +345,19 @@ player_props_function <- function() {
   player_runs_all <-
     bind_rows(player_runs_combined, player_runs_alternative_lines) |>
     arrange(player_name, line) |>
-    left_join(player_teams[, c("player_name", "player_team")], by = "player_name") |>
+    left_join(ipl_squads_2024, by = c("player_name" = "player")) |>
     mutate(
       opposition_team = case_when(
-        player_team == home_team ~ away_team,
-        player_team == away_team ~ home_team
+        team == home_team ~ away_team,
+        team == away_team ~ home_team
       )
     ) |>
-    relocate(player_team, opposition_team, .after = player_name)
+    relocate(team, opposition_team, .after = player_name) |> 
+    rename(player_team = team)
   
   # Write to csv----------------------------------------------------------------
   write_csv(player_runs_all,
             "Data/scraped_odds/sportsbet_player_runs.csv")
-  
-  #===============================================================================
-  # Top Wicket Takers
-  #===============================================================================
-  
-  # Map function to player points urls
-  top_wicket_takers_data <-
-    map(top_wicket_takers_links, safe_read_prop_url)
-  
-  # Get just result part from output
-  top_wicket_takers_data <-
-    top_wicket_takers_data |>
-    map("result") |>
-    map_df(bind_rows) |>
-    mutate(url = str_extract(as.character(url), "[0-9]{6,8}")) |>
-    rename(match_id = url) |>
-    mutate(match_id = as.numeric(match_id)) |>
-    left_join(team_names, by = "match_id") |>
-    mutate(match = paste(home_team, "v", away_team))
-  
-  # Get home team top wicket taker
-  home_top_wicket_taker <-
-    top_wicket_takers_data |>
-    filter(str_detect(prop_market_name, "Top .* Wicket Taker")) |>
-    mutate(player_team = str_remove(prop_market_name, "Top ")) |>
-    mutate(player_team = str_remove(player_team, " Wicket Taker")) |>
-    filter(player_team == home_team) |>
-    transmute(
-      match,
-      market = "Top Team Wicket Taker",
-      home_team,
-      away_team,
-      player_name = selection_name_prop,
-      player_team,
-      opposition_team = away_team,
-      price = prop_market_price
-    )
-  
-  # Get away team top  wicket taker
-  away_top_wicket_taker <-
-    top_wicket_takers_data |>
-    filter(str_detect(prop_market_name, "Top .* Wicket Taker")) |>
-    mutate(player_team = str_remove(prop_market_name, "Top ")) |>
-    mutate(player_team = str_remove(player_team, " Wicket Taker")) |>
-    filter(player_team == away_team) |>
-    transmute(
-      match,
-      market = "Top Team Wicket Taker",
-      home_team,
-      away_team,
-      player_name = selection_name_prop,
-      player_team,
-      opposition_team = away_team,
-      price = prop_market_price
-    )
-  
-  # Combine
-  top_team_wicket_taker <-
-    bind_rows(home_top_wicket_taker, away_top_wicket_taker) |>
-    mutate(
-      player_name = case_when(player_name == "Tom Rogers (Stars)" ~ "Tom F Rogers",
-                              .default = player_name)
-    )
-  
-  # Alternate Player Wickets
-  player_wickets_alternative_lines <-
-    top_wicket_takers_data |>
-    filter(str_detect(prop_market_name, "to Take")) |>
-    transmute(
-      match,
-      market = "Player Wickets",
-      home_team,
-      away_team,
-      player_name = str_remove(selection_name_prop, " - Over"),
-      line = str_extract(prop_market_name, "[0-9]{1,3}"),
-      over_price = prop_market_price
-    ) |>
-    mutate(line = as.numeric(line) - 0.5) |>
-    mutate(agency = "Sportsbet") |>
-    mutate(
-      player_name = case_when(
-        player_name == "Tom Rogers (Stars)" ~ "Tom F Rogers",
-        player_name == "Matthew Kuhnemann" ~ "Matt Kuhnemann",
-        player_name == "Mujeeb Ur-Rahman" ~ "Mujeeb Ur Rahman",
-        player_name == "Stephen O'Keefe" ~ "Steve O'Keefe",
-        player_name == "Tom Rogers." ~ "Tom Rogers",
-        .default = player_name
-      )
-    ) |>
-    left_join(player_teams[, c("player_name", "player_team")], by = "player_name") |>
-    mutate(
-      opposition_team = case_when(
-        player_team == home_team ~ away_team,
-        player_team == away_team ~ home_team
-      )
-    ) |>
-    relocate(player_team, opposition_team, .after = player_name)
-  
-  # Write to csv----------------------------------------------------------------
-  write_csv(
-    player_wickets_alternative_lines,
-    "Data/scraped_odds/sportsbet_player_wickets.csv"
-  )
-  write_csv(
-    top_team_wicket_taker,
-    "Data/scraped_odds/sportsbet_top_team_wicket_taker.csv"
-  )
-  
-  #===============================================================================
-  # First Innings
-  #===============================================================================
-  
-  # Map function to player points urls
-  first_innings_data <-
-    map(first_innings_links, safe_read_prop_url)
-  
-  # Get just result part from output
-  first_innings_data <-
-    first_innings_data |>
-    map("result") |>
-    map_df(bind_rows) |>
-    mutate(url = str_extract(as.character(url), "[0-9]{6,8}")) |>
-    rename(match_id = url) |>
-    mutate(match_id = as.numeric(match_id)) |>
-    left_join(team_names, by = "match_id") |>
-    mutate(match = paste(home_team, "v", away_team))
-  
-  # First Over Runs
-  first_over_runs_overs <-
-    first_innings_data |>
-    filter(str_detect(prop_market_name, "First Over Runs \\(1st Inn\\)")) |>
-    filter(str_detect(selection_name_prop, "Over")) |>
-    transmute(
-      match,
-      market = "First Over Runs (First Innings)",
-      home_team,
-      away_team,
-      line = handicap,
-      over_price = prop_market_price
-    )
-  
-  first_over_runs_unders <-
-    first_innings_data |>
-    filter(str_detect(prop_market_name, "First Over Runs \\(1st Inn\\)")) |>
-    filter(str_detect(selection_name_prop, "Under")) |>
-    transmute(
-      match,
-      market = "First Over Runs (First Innings)",
-      home_team,
-      away_team,
-      line = handicap,
-      under_price = prop_market_price
-    )
-  
-  first_over_runs <-
-    first_over_runs_overs |>
-    left_join(first_over_runs_unders,
-              by = c("match", "market", "home_team", "away_team", "line")) |>
-    mutate(agency = "Sportsbet")
-  
-  # Method of first dismissal
-  first_dismissal_data <-
-    first_innings_data |>
-    filter(str_detect(prop_market_name, "Method of First Dismissal \\(1st Inn\\)")) |>
-    transmute(
-      match,
-      market = "Method of 1st Dismissal (1st Innings)",
-      home_team,
-      away_team,
-      method = selection_name_prop,
-      price = prop_market_price
-    ) |>
-    mutate(agency = "Sportsbet")
-  
-  # Runs at fall of first wicket
-  first_wicket_runs_overs <-
-    first_innings_data |>
-    filter(str_detect(prop_market_name, "Runs at Fall of 1st Wicket \\(1st Inn\\)")) |>
-    filter(str_detect(selection_name_prop, "Over")) |>
-    transmute(
-      match,
-      market = "Runs at Fall of 1st Wicket (First Innings)",
-      home_team,
-      away_team,
-      line = handicap,
-      over_price = prop_market_price
-    )
-  
-  first_wicket_runs_unders <-
-    first_innings_data |>
-    filter(str_detect(prop_market_name, "Runs at Fall of 1st Wicket \\(1st Inn\\)")) |>
-    filter(str_detect(selection_name_prop, "Under")) |>
-    transmute(
-      match,
-      market = "Runs at Fall of 1st Wicket (First Innings)",
-      home_team,
-      away_team,
-      line = handicap,
-      under_price = prop_market_price
-    )
-  
-  first_wicket_runs <-
-    first_wicket_runs_overs |>
-    left_join(
-      first_wicket_runs_unders,
-      by = c("match", "market", "home_team", "away_team", "line")
-    ) |>
-    mutate(agency = "Sportsbet")
-  
-  # Write to csv----------------------------------------------------------------
-  write_csv(first_over_runs,
-            "Data/scraped_odds/sportsbet_first_over_runs.csv")
-  write_csv(first_dismissal_data,
-            "Data/scraped_odds/sportsbet_first_dismissal.csv")
-  write_csv(first_wicket_runs,
-            "Data/scraped_odds/sportsbet_runs_at_first_wicket.csv")
   
   #=============================================================================
   # Boundaries
@@ -783,8 +499,49 @@ player_props_function <- function() {
   player_boundaries_combined |>
     bind_rows(to_score_a_6) |>
     write_csv("Data/scraped_odds/sportsbet_player_boundaries.csv")
+  
+  #=========================================================
+  # Player Wickets
+  #=========================================================
+  
+  # Player wickets alternative lines
+  player_wickets_alternative_lines <-
+    top_run_scorers_data |>
+    filter(str_detect(prop_market_name, "Player Multis")) |>
+    filter(str_detect(selection_name_prop, "\\+ Wickets$")) |>
+    mutate(prop_market_name = str_replace(prop_market_name, "Fifty", "50")) |>
+    transmute(
+      match,
+      market = "Player Wickets",
+      home_team,
+      away_team,
+      player_name = str_remove(selection_name_prop, " \\d+\\+ Wickets$"),
+      line = str_extract(selection_name_prop, "[0-9]{1,3}"),
+      over_price = prop_market_price
+    ) |>
+    mutate(line = as.numeric(line) - 0.5) |>
+    mutate(agency = "Sportsbet") |>
+    mutate(
+      player_name = case_when(
+        player_name == "Mohammad Siraj" ~ "Mohammed Siraj",
+        .default = player_name
+      )
+    ) |> 
+    left_join(ipl_squads_2024, by = c("player_name" = "player")) |>
+    mutate(
+      opposition_team = case_when(
+        team == home_team ~ away_team,
+        team == away_team ~ home_team
+      )
+    ) |>
+    relocate(team, opposition_team, .after = player_name) |> 
+    rename(player_team = team) |> 
+    select(-first_name, -last_name, -first_initial, -join_name)
+  
+  # Write to csv----------------------------------------------------------------
+  player_wickets_alternative_lines |>
+    write_csv("Data/scraped_odds/sportsbet_player_wickets.csv")
 }
-
 
 ##%######################################################%##
 #                                                          #

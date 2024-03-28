@@ -2,100 +2,25 @@
 library(tidyverse)
 library(rvest)
 library(httr2)
+library(jsonlite)
 
-# Get fixture and player team data
-player_teams <- read_csv("Data/supercoach-data.csv")
-fixture <- read_csv("Data/supercoach-fixture.csv")
+# Squads 2024
+ipl_squads_2024 <- read_csv("Data/ipl_squads_2024.csv")
 
-# Get each teams next match
-home_matches <-
-  fixture |>
-  mutate(match = paste(home_team, "v", away_team)) |>
-  select(team = home_team, match, start_date) |>
-  mutate(start_date = start_date + hours(10) + minutes(30)) |>  
-  filter(start_date >= today())
-
-away_matches <-
-  fixture |>
-  mutate(match = paste(home_team, "v", away_team)) |>
-  select(team = away_team, match, start_date) |>
-  mutate(start_date = start_date + hours(10) + minutes(30)) |>  
-  filter(start_date >= today())
-
-# Combine together
-all_matches <-
-  bind_rows(home_matches, away_matches) |>
-  arrange(team, start_date) |> 
-  group_by(team) |> 
-  slice_head(n = 1) |> 
-  ungroup()
-
-# Fix certain problematic player names
-player_teams <-
-  player_teams |>
-  mutate(
-    player_name = if_else(
-      player_name == "Tom Rogers" &
-        player_team == "Melbourne Stars",
-      "Tom F Rogers",
-      player_name
-    )
-  )
-
-# URL to get responses
-neds_url = "https://api.neds.com.au/v2/sport/event-request?category_ids=%5B%2294984918-dbac-432b-b420-c219ec9203f4%22%5D&include_any_team_vs_any_team_events=true"
-
-# Make request and get response
-neds_response <-
-  request(neds_url) |>
-  req_perform() |> 
-  resp_body_json()
-
-# Initialize empty lists to store data
-event_name <- character()
-event_id <- character()
-competition_name <- character()
-
-# Extract event IDs and names from JSON response
-for (value in neds_response$events) {
-  event_name <- c(event_name, value$name)
-  event_id <- c(event_id, value$id)
-  competition_name <- c(competition_name, value$competition$name)
-}
-
-# Create a data frame from the vectors
-df <- data.frame(event_name, event_id, competition_name)
-
-# Filter the data frame to only include matches with ' vs ' in the event name
-df <- df |> filter(str_detect(event_name, ' vs '))
-
-# Only get Big Bash Games
-df <- df |> filter(str_detect(competition_name, 'Big Bash'))
+# Function to fix team names
+source("Scripts/07-fix-team-names.R")
 
 #===============================================================================
-# Get event card data for each match
+# Get JSON for each match
 #===============================================================================
 
-# Base URL for event card
-event_url <- "https://api.neds.com.au/v2/sport/event-card?id="
+# Read in df
+df <- read_csv("Odds-Scraper/Neds/neds_ipl_match_urls.csv")
 
-# List of event URLs
-event_json <- paste0(event_url, df$event_id)
+# Get match json files
+json_match_files <- list.files("Odds-Scraper/Neds/", pattern = "^data_.*.json", full.names = TRUE)
 
-# Initialize an empty list to store event JSON data
-event_json_list <- list()
-
-# Loop through each event URL and get the event card JSON data
-for (url in event_json) {
-  tryCatch({
-    response2 <- request(url) |>
-      req_perform() |>
-      resp_body_json()
-    event_json_list <- append(event_json_list, list(response2))
-  }, error = function(e) {
-    cat("Error:", url, "\n")
-  })
-} 
+event_json_list <- map(json_match_files, ~fromJSON(.x))
 
 #===============================================================================
 # Get the market information for each match
@@ -125,11 +50,24 @@ for (i in seq_along(event_json_list)) {
   
   # Loop through the markets
   for (market in match$markets) {
-    market_lookup_name <- c(market_lookup_name, market$name)
-    market_lookup_id <- c(market_lookup_id, market$id)
+
+    # Check for market name existence and append accordingly
+    if (is.null(market$name)) {
+      market_lookup_name <- c(market_lookup_name, NA)  # Ensure NA is added if there's no name
+    } else {
+      market_lookup_name <- c(market_lookup_name, market$name)
+    }
     
+    # Check for id existence and append accordingly
+    if (is.null(market$id)) {
+      market_lookup_id <- c(market_lookup_id, NA)  # Ensure NA is added if there's no id
+    } else {
+      market_lookup_id <- c(market_lookup_id, market$id)
+    }
+    
+    # Check for handicap existence and append accordingly
     if (is.null(market$handicap)) {
-      handicaps <- c(handicaps, NA)
+      handicaps <- c(handicaps, NA)  # Ensure NA is added if there's no handicap
     } else {
       handicaps <- c(handicaps, market$handicap)
     }
@@ -202,7 +140,7 @@ h2h_data <-
 # Filter to only include player runs markets
 player_runs_data <-
   market_df |> 
-  filter(str_detect(market_name, "(Player Runs)|(to Score)"))
+  filter(str_detect(market_name, "(Total Runs)|(to Score)"))
 
 # Overs
 runs_overs <-
@@ -250,8 +188,9 @@ player_runs_data <-
   select(match, market = market_name, player_name, line, over_price, under_price, agency) |> 
   mutate(player_name = case_when(player_name == "Tom Rogers" ~ "Tom F Rogers",
                                  .default = player_name)) |> 
-  left_join(player_teams[, c("player_name", "player_team")]) |> 
+  left_join(ipl_squads_2024, by = c("player_name" = "player")) |>
   separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE) |> 
+  rename(player_team = team) |> 
   mutate(opposition_team = case_when(player_team == home_team ~ away_team,
                                      player_team == away_team ~ home_team)) |>
   relocate(player_team, opposition_team, .after = player_name)
@@ -317,8 +256,9 @@ player_wickets_data <-
   select(match, market = market_name, player_name, line, over_price, under_price, agency) |> 
   mutate(player_name = case_when(player_name == "Tom Rogers" ~ "Tom Rogers",
                                  .default = player_name)) |> 
-  left_join(player_teams[, c("player_name", "player_team")]) |> 
+  left_join(ipl_squads_2024, by = c("player_name" = "player")) |>
   separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE) |> 
+  rename(player_team = team) |> 
   mutate(opposition_team = case_when(player_team == home_team ~ away_team,
                                      player_team == away_team ~ home_team)) |>
   relocate(player_team, opposition_team, .after = player_name)
@@ -384,10 +324,11 @@ player_boundaries_data <-
   boundaries_overs |> 
   full_join(boundaries_unders, by = c("match", "player_name", "line", "agency", "market_name")) |> 
   select(match, market = market_name, player_name, line, over_price, under_price, agency) |> 
-  mutate(player_name = case_when(player_name == "Tom Rogers" ~ "Tom F Rogers",
+  mutate(player_name = case_when(player_name == "Sk Rasheed" ~ "Shaik Rasheed",
                                  .default = player_name)) |> 
-  left_join(player_teams[, c("player_name", "player_team")]) |> 
+  left_join(ipl_squads_2024, by = c("player_name" = "player")) |>
   separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE) |> 
+  rename(player_team = team) |> 
   mutate(opposition_team = case_when(player_team == home_team ~ away_team,
                                      player_team == away_team ~ home_team)) |>
   relocate(player_team, opposition_team, .after = player_name)

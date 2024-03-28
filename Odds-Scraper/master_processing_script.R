@@ -10,8 +10,8 @@ library(googledrive)
 # Directory of scraped odds data
 scraped_odds_dir <- "Data/scraped_odds"
 
-# Get empirical probability function
-source("Scripts/04-get-empirical-probabilities.R")
+# # Get empirical probability function
+# source("Scripts/04-get-empirical-probabilities.R")
 
 # # Run all odds scraping scripts-----------------------------------------------
 run_scraping <- function(script_name) {

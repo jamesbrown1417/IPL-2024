@@ -139,7 +139,7 @@ pick_your_own_runs_markets <-
 
 # Map function
 player_runs_alternate <-
-  map(pick_your_own_runs_markets, read_topsport_html) |> 
+  map(pick_your_own_runs_markets, read_topsport_html, .progress = TRUE) |> 
   bind_rows() |> 
   mutate(line = line - 0.5) |>
   rename(over_price = Win) |> 

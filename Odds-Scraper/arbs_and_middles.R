@@ -53,7 +53,6 @@ all_overs <-
 arbitrage <-
   all_unders |> 
   left_join(all_overs) |> 
-  filter(agency_under != agency_over) |>
   mutate(margin = 1 / under_price + 1 / over_price) |>
   mutate(margin = round(margin, 3)) |>
   arrange(margin)
@@ -92,3 +91,123 @@ model <- lm(middle_size ~ margin, data = middles)
 # Get residuals
 middles <- middles |> 
   mutate(residuals = model$residuals)
+
+# Player Wickets Data----------------------------------------------------------
+
+# List all files in the directory that match player wickets
+player_wickets_files <- list.files(scraped_odds_dir, pattern = "player_wickets", full.names = TRUE)
+
+# Read in all files
+player_wickets_data <- 
+  player_wickets_files |> 
+  map_dfr(read_csv, col_types = cols(.default = col_character())) |> 
+  arrange(player_name, line, desc(over_price)) |> 
+  mutate(over_price = as.numeric(over_price),
+         under_price = as.numeric(under_price)) |> 
+  mutate(implied_prob_over = 1/over_price) |> 
+  group_by(player_name, line) |>
+  mutate(
+    min_implied_prob = min(implied_prob_over, na.rm = TRUE),
+    max_implied_prob = max(implied_prob_over, na.rm = TRUE)
+  ) |>
+  mutate(variation = round((max_implied_prob - min_implied_prob), 2)) |>
+  ungroup() |>
+  select(-min_implied_prob,-max_implied_prob)
+
+# Get possible arbitrages-------------------------------------------------------
+all_unders <-
+  player_wickets_data |> 
+  select(-match:-away_team, -variation, -implied_prob_over) |>
+  filter(!is.na(under_price)) |> 
+  select(-over_price) |> 
+  rename(agency_under = agency)
+
+all_overs <-
+  player_wickets_data |> 
+  select(-match:-away_team, -variation, -implied_prob_over) |>
+  filter(!is.na(over_price)) |> 
+  select(-under_price) |> 
+  rename(agency_over = agency) |> 
+  group_by(player_name, line) |>
+  slice_max(over_price) |>
+  ungroup()
+
+arbitrage <-
+  all_unders |> 
+  left_join(all_overs) |> 
+  mutate(margin = 1 / under_price + 1 / over_price) |>
+  mutate(margin = round(margin, 3)) |>
+  arrange(margin)
+
+middles <-
+  all_unders |> 
+  rename(under_line = line) |> 
+  left_join(all_overs |> rename(over_line = line), relationship = "many-to-many") |> 
+  filter(agency_under != agency_over) |>
+  filter(over_line < under_line) |>
+  mutate(margin = 1 / under_price + 1 / over_price) |>
+  mutate(margin = round(margin, 3)) |>
+  mutate(under_line = as.numeric(under_line)) |>
+  mutate(over_line = as.numeric(over_line)) |>
+  mutate(middle_size = under_line - over_line) |>
+  arrange(desc(middle_size))
+
+# Boundaries--------------------------------------------------------------------
+
+# List all files in the directory that match player boundaries
+player_boundaries_files <- list.files(scraped_odds_dir, pattern = "player_boundaries", full.names = TRUE)
+
+# Read in all files
+player_boundaries_data <- 
+  player_boundaries_files |> 
+  map_dfr(read_csv, col_types = cols(.default = col_character())) |> 
+  arrange(player_name, line, desc(over_price)) |> 
+  mutate(over_price = as.numeric(over_price),
+         under_price = as.numeric(under_price)) |> 
+  mutate(implied_prob_over = 1/over_price) |> 
+  group_by(player_name, line) |>
+  mutate(
+    min_implied_prob = min(implied_prob_over, na.rm = TRUE),
+    max_implied_prob = max(implied_prob_over, na.rm = TRUE)
+  ) |>
+  mutate(variation = round((max_implied_prob - min_implied_prob), 2)) |>
+  ungroup() |>
+  select(-min_implied_prob,-max_implied_prob)
+
+# Get possible arbitrages-------------------------------------------------------
+all_unders <-
+  player_boundaries_data |> 
+  select(-match:-away_team, -variation, -implied_prob_over) |>
+  filter(!is.na(under_price)) |> 
+  select(-over_price) |> 
+  rename(agency_under = agency)
+
+all_overs <-
+  player_boundaries_data |> 
+  select(-match:-away_team, -variation, -implied_prob_over) |>
+  filter(!is.na(over_price)) |> 
+  select(-under_price) |> 
+  rename(agency_over = agency) |> 
+  group_by(player_name, line) |>
+  slice_max(over_price) |>
+  ungroup()
+
+arbitrage <-
+  all_unders |> 
+  left_join(all_overs) |> 
+  mutate(margin = 1 / under_price + 1 / over_price) |>
+  mutate(margin = round(margin, 3)) |>
+  arrange(margin)
+
+middles <-
+  all_unders |> 
+  rename(under_line = line) |> 
+  left_join(all_overs |> rename(over_line = line), relationship = "many-to-many") |> 
+  filter(agency_under != agency_over) |>
+  filter(over_line < under_line) |>
+  mutate(margin = 1 / under_price + 1 / over_price) |>
+  mutate(margin = round(margin, 3)) |>
+  mutate(under_line = as.numeric(under_line)) |>
+  mutate(over_line = as.numeric(over_line)) |>
+  mutate(middle_size = under_line - over_line) |>
+  arrange(desc(middle_size))

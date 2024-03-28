@@ -1,0 +1,321 @@
+match,market,home_team,away_team,player_name,player_team,opposition_team,line,over_price,agency
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Aiden Markram,Sunrisers Hyderabad,Mumbai Indians,0.5,1.22,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Aiden Markram,Sunrisers Hyderabad,Mumbai Indians,0.5,1.22,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Aiden Markram,Sunrisers Hyderabad,Mumbai Indians,1.5,1.65,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Aiden Markram,Sunrisers Hyderabad,Mumbai Indians,1.5,1.65,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Aiden Markram,Sunrisers Hyderabad,Mumbai Indians,2.5,2.25,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Aiden Markram,Sunrisers Hyderabad,Mumbai Indians,2.5,2.25,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Aiden Markram,Sunrisers Hyderabad,Mumbai Indians,3.5,3.45,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Aiden Markram,Sunrisers Hyderabad,Mumbai Indians,3.5,3.45,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Aiden Markram,Sunrisers Hyderabad,Mumbai Indians,4.5,6,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Aiden Markram,Sunrisers Hyderabad,Mumbai Indians,4.5,6,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,David Warner,Delhi Capitals,Rajasthan Royals,0.5,1.16,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,David Warner,Delhi Capitals,Rajasthan Royals,0.5,1.16,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,David Warner,Delhi Capitals,Rajasthan Royals,1.5,1.38,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,David Warner,Delhi Capitals,Rajasthan Royals,1.5,1.38,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,David Warner,Delhi Capitals,Rajasthan Royals,2.5,1.63,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,David Warner,Delhi Capitals,Rajasthan Royals,2.5,1.63,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,David Warner,Delhi Capitals,Rajasthan Royals,3.5,2.12,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,David Warner,Delhi Capitals,Rajasthan Royals,3.5,2.12,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,David Warner,Delhi Capitals,Rajasthan Royals,4.5,2.46,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,David Warner,Delhi Capitals,Rajasthan Royals,4.5,2.46,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Devdutt Padikkal,Lucknow Super Giants,Punjab Kings,0.5,1.15,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Devdutt Padikkal,Lucknow Super Giants,Punjab Kings,0.5,1.15,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Devdutt Padikkal,Lucknow Super Giants,Punjab Kings,1.5,1.39,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Devdutt Padikkal,Lucknow Super Giants,Punjab Kings,1.5,1.39,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Devdutt Padikkal,Lucknow Super Giants,Punjab Kings,2.5,1.71,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Devdutt Padikkal,Lucknow Super Giants,Punjab Kings,2.5,1.71,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Devdutt Padikkal,Lucknow Super Giants,Punjab Kings,3.5,2.14,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Devdutt Padikkal,Lucknow Super Giants,Punjab Kings,3.5,2.14,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Devdutt Padikkal,Lucknow Super Giants,Punjab Kings,4.5,3.05,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Devdutt Padikkal,Lucknow Super Giants,Punjab Kings,4.5,3.05,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Faf du Plessis,Royal Challengers Bangalore,NA,0.5,1.01,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Faf du Plessis,Royal Challengers Bangalore,NA,0.5,1.01,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Faf du Plessis,Royal Challengers Bangalore,NA,1.5,1.21,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Faf du Plessis,Royal Challengers Bangalore,NA,1.5,1.21,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Faf du Plessis,Royal Challengers Bangalore,NA,2.5,1.39,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Faf du Plessis,Royal Challengers Bangalore,NA,2.5,1.39,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Faf du Plessis,Royal Challengers Bangalore,NA,3.5,1.81,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Faf du Plessis,Royal Challengers Bangalore,NA,3.5,1.81,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Faf du Plessis,Royal Challengers Bangalore,NA,4.5,2.05,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Faf du Plessis,Royal Challengers Bangalore,NA,4.5,2.05,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Glenn Maxwell,Royal Challengers Bangalore,NA,0.5,1.01,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Glenn Maxwell,Royal Challengers Bangalore,NA,0.5,1.01,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Glenn Maxwell,Royal Challengers Bangalore,NA,1.5,1.28,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Glenn Maxwell,Royal Challengers Bangalore,NA,1.5,1.28,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Glenn Maxwell,Royal Challengers Bangalore,NA,2.5,1.6,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Glenn Maxwell,Royal Challengers Bangalore,NA,2.5,1.6,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Glenn Maxwell,Royal Challengers Bangalore,NA,3.5,2.15,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Glenn Maxwell,Royal Challengers Bangalore,NA,3.5,2.15,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Glenn Maxwell,Royal Challengers Bangalore,NA,4.5,2.32,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Glenn Maxwell,Royal Challengers Bangalore,NA,4.5,2.32,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Heinrich Klaasen,Sunrisers Hyderabad,Mumbai Indians,0.5,1.09,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Heinrich Klaasen,Sunrisers Hyderabad,Mumbai Indians,0.5,1.09,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Heinrich Klaasen,Sunrisers Hyderabad,Mumbai Indians,1.5,1.5,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Heinrich Klaasen,Sunrisers Hyderabad,Mumbai Indians,1.5,1.5,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Heinrich Klaasen,Sunrisers Hyderabad,Mumbai Indians,2.5,2.46,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Heinrich Klaasen,Sunrisers Hyderabad,Mumbai Indians,2.5,2.46,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Heinrich Klaasen,Sunrisers Hyderabad,Mumbai Indians,3.5,3.75,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Heinrich Klaasen,Sunrisers Hyderabad,Mumbai Indians,3.5,3.75,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Heinrich Klaasen,Sunrisers Hyderabad,Mumbai Indians,4.5,5.5,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Heinrich Klaasen,Sunrisers Hyderabad,Mumbai Indians,4.5,5.5,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,Mumbai Indians,Sunrisers Hyderabad,0.5,1.12,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,Mumbai Indians,Sunrisers Hyderabad,0.5,1.12,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,Mumbai Indians,Sunrisers Hyderabad,1.5,1.46,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,Mumbai Indians,Sunrisers Hyderabad,1.5,1.46,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,Mumbai Indians,Sunrisers Hyderabad,2.5,1.9,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,Mumbai Indians,Sunrisers Hyderabad,2.5,1.9,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,Mumbai Indians,Sunrisers Hyderabad,3.5,2.5,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,Mumbai Indians,Sunrisers Hyderabad,3.5,2.5,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,Mumbai Indians,Sunrisers Hyderabad,4.5,3.2,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,Mumbai Indians,Sunrisers Hyderabad,4.5,3.2,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Jonny Bairstow,Punjab Kings,Lucknow Super Giants,0.5,1.13,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Jonny Bairstow,Punjab Kings,Lucknow Super Giants,0.5,1.13,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Jonny Bairstow,Punjab Kings,Lucknow Super Giants,1.5,1.46,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Jonny Bairstow,Punjab Kings,Lucknow Super Giants,1.5,1.46,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Jonny Bairstow,Punjab Kings,Lucknow Super Giants,2.5,2.02,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Jonny Bairstow,Punjab Kings,Lucknow Super Giants,2.5,2.02,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Jonny Bairstow,Punjab Kings,Lucknow Super Giants,3.5,2.55,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Jonny Bairstow,Punjab Kings,Lucknow Super Giants,3.5,2.55,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Jonny Bairstow,Punjab Kings,Lucknow Super Giants,4.5,3.5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Jonny Bairstow,Punjab Kings,Lucknow Super Giants,4.5,3.5,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Jos Buttler,Rajasthan Royals,Delhi Capitals,0.5,1.02,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Jos Buttler,Rajasthan Royals,Delhi Capitals,0.5,1.02,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Jos Buttler,Rajasthan Royals,Delhi Capitals,1.5,1.23,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Jos Buttler,Rajasthan Royals,Delhi Capitals,1.5,1.23,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Jos Buttler,Rajasthan Royals,Delhi Capitals,2.5,1.55,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Jos Buttler,Rajasthan Royals,Delhi Capitals,2.5,1.55,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Jos Buttler,Rajasthan Royals,Delhi Capitals,3.5,1.95,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Jos Buttler,Rajasthan Royals,Delhi Capitals,3.5,1.95,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Jos Buttler,Rajasthan Royals,Delhi Capitals,4.5,2.3,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Jos Buttler,Rajasthan Royals,Delhi Capitals,4.5,2.3,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,KL Rahul,Lucknow Super Giants,Punjab Kings,0.5,1.14,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,KL Rahul,Lucknow Super Giants,Punjab Kings,0.5,1.14,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,KL Rahul,Lucknow Super Giants,Punjab Kings,1.5,1.45,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,KL Rahul,Lucknow Super Giants,Punjab Kings,1.5,1.45,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,KL Rahul,Lucknow Super Giants,Punjab Kings,2.5,1.79,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,KL Rahul,Lucknow Super Giants,Punjab Kings,2.5,1.79,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,KL Rahul,Lucknow Super Giants,Punjab Kings,3.5,2.4,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,KL Rahul,Lucknow Super Giants,Punjab Kings,3.5,2.4,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,KL Rahul,Lucknow Super Giants,Punjab Kings,4.5,3.5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,KL Rahul,Lucknow Super Giants,Punjab Kings,4.5,3.5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Liam Livingstone,Punjab Kings,Lucknow Super Giants,0.5,1.43,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Liam Livingstone,Punjab Kings,Lucknow Super Giants,0.5,1.43,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Liam Livingstone,Punjab Kings,Lucknow Super Giants,1.5,2.08,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Liam Livingstone,Punjab Kings,Lucknow Super Giants,1.5,2.08,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Liam Livingstone,Punjab Kings,Lucknow Super Giants,2.5,3.25,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Liam Livingstone,Punjab Kings,Lucknow Super Giants,2.5,3.25,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Liam Livingstone,Punjab Kings,Lucknow Super Giants,3.5,4.8,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Liam Livingstone,Punjab Kings,Lucknow Super Giants,3.5,4.8,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Liam Livingstone,Punjab Kings,Lucknow Super Giants,4.5,6,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Liam Livingstone,Punjab Kings,Lucknow Super Giants,4.5,6,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Mayank Agarwal,Sunrisers Hyderabad,Mumbai Indians,0.5,1.12,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Mayank Agarwal,Sunrisers Hyderabad,Mumbai Indians,0.5,1.12,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Mayank Agarwal,Sunrisers Hyderabad,Mumbai Indians,1.5,1.34,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Mayank Agarwal,Sunrisers Hyderabad,Mumbai Indians,1.5,1.34,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Mayank Agarwal,Sunrisers Hyderabad,Mumbai Indians,2.5,1.66,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Mayank Agarwal,Sunrisers Hyderabad,Mumbai Indians,2.5,1.66,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Mayank Agarwal,Sunrisers Hyderabad,Mumbai Indians,3.5,2.15,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Mayank Agarwal,Sunrisers Hyderabad,Mumbai Indians,3.5,2.15,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Mayank Agarwal,Sunrisers Hyderabad,Mumbai Indians,4.5,3.05,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Mayank Agarwal,Sunrisers Hyderabad,Mumbai Indians,4.5,3.05,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Mitchell Marsh,Delhi Capitals,Rajasthan Royals,0.5,1.1,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Mitchell Marsh,Delhi Capitals,Rajasthan Royals,0.5,1.1,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Mitchell Marsh,Delhi Capitals,Rajasthan Royals,1.5,1.42,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Mitchell Marsh,Delhi Capitals,Rajasthan Royals,1.5,1.42,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Mitchell Marsh,Delhi Capitals,Rajasthan Royals,2.5,1.91,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Mitchell Marsh,Delhi Capitals,Rajasthan Royals,2.5,1.91,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Mitchell Marsh,Delhi Capitals,Rajasthan Royals,3.5,2.7,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Mitchell Marsh,Delhi Capitals,Rajasthan Royals,3.5,2.7,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Mitchell Marsh,Delhi Capitals,Rajasthan Royals,4.5,3.05,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Mitchell Marsh,Delhi Capitals,Rajasthan Royals,4.5,3.05,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,Lucknow Super Giants,Punjab Kings,0.5,1.34,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,Lucknow Super Giants,Punjab Kings,0.5,1.34,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,Lucknow Super Giants,Punjab Kings,1.5,1.95,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,Lucknow Super Giants,Punjab Kings,1.5,1.95,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,Lucknow Super Giants,Punjab Kings,2.5,3.05,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,Lucknow Super Giants,Punjab Kings,2.5,3.05,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,Lucknow Super Giants,Punjab Kings,3.5,5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,Lucknow Super Giants,Punjab Kings,3.5,5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,Lucknow Super Giants,Punjab Kings,4.5,8,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,Lucknow Super Giants,Punjab Kings,4.5,8,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Phil Salt,Kolkata Knight Riders,Royal Challengers Bengaluru,0.5,1.01,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Phil Salt,Kolkata Knight Riders,Royal Challengers Bengaluru,0.5,1.01,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Phil Salt,Kolkata Knight Riders,Royal Challengers Bengaluru,1.5,1.17,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Phil Salt,Kolkata Knight Riders,Royal Challengers Bengaluru,1.5,1.17,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Phil Salt,Kolkata Knight Riders,Royal Challengers Bengaluru,2.5,1.46,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Phil Salt,Kolkata Knight Riders,Royal Challengers Bengaluru,2.5,1.46,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Phil Salt,Kolkata Knight Riders,Royal Challengers Bengaluru,3.5,1.78,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Phil Salt,Kolkata Knight Riders,Royal Challengers Bengaluru,3.5,1.78,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Phil Salt,Kolkata Knight Riders,Royal Challengers Bengaluru,4.5,2.44,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Phil Salt,Kolkata Knight Riders,Royal Challengers Bengaluru,4.5,2.44,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Prabhsimran Singh,Punjab Kings,Lucknow Super Giants,0.5,1.18,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Prabhsimran Singh,Punjab Kings,Lucknow Super Giants,0.5,1.18,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Prabhsimran Singh,Punjab Kings,Lucknow Super Giants,1.5,1.5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Prabhsimran Singh,Punjab Kings,Lucknow Super Giants,1.5,1.5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Prabhsimran Singh,Punjab Kings,Lucknow Super Giants,2.5,1.99,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Prabhsimran Singh,Punjab Kings,Lucknow Super Giants,2.5,1.99,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Prabhsimran Singh,Punjab Kings,Lucknow Super Giants,3.5,3,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Prabhsimran Singh,Punjab Kings,Lucknow Super Giants,3.5,3,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Prabhsimran Singh,Punjab Kings,Lucknow Super Giants,4.5,4.5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Prabhsimran Singh,Punjab Kings,Lucknow Super Giants,4.5,4.5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Quinton de Kock,Lucknow Super Giants,Punjab Kings,0.5,1.24,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Quinton de Kock,Lucknow Super Giants,Punjab Kings,0.5,1.24,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Quinton de Kock,Lucknow Super Giants,Punjab Kings,1.5,1.41,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Quinton de Kock,Lucknow Super Giants,Punjab Kings,1.5,1.41,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Quinton de Kock,Lucknow Super Giants,Punjab Kings,2.5,1.79,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Quinton de Kock,Lucknow Super Giants,Punjab Kings,2.5,1.79,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Quinton de Kock,Lucknow Super Giants,Punjab Kings,3.5,2.5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Quinton de Kock,Lucknow Super Giants,Punjab Kings,3.5,2.5,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Quinton de Kock,Lucknow Super Giants,Punjab Kings,4.5,3.35,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Quinton de Kock,Lucknow Super Giants,Punjab Kings,4.5,3.35,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rahmanullah Gurbaz,Kolkata Knight Riders,Royal Challengers Bengaluru,0.5,1.13,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rahmanullah Gurbaz,Kolkata Knight Riders,Royal Challengers Bengaluru,0.5,1.13,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rahmanullah Gurbaz,Kolkata Knight Riders,Royal Challengers Bengaluru,1.5,1.55,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rahmanullah Gurbaz,Kolkata Knight Riders,Royal Challengers Bengaluru,1.5,1.55,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rahmanullah Gurbaz,Kolkata Knight Riders,Royal Challengers Bengaluru,2.5,1.92,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rahmanullah Gurbaz,Kolkata Knight Riders,Royal Challengers Bengaluru,2.5,1.92,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rahmanullah Gurbaz,Kolkata Knight Riders,Royal Challengers Bengaluru,3.5,2.6,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rahmanullah Gurbaz,Kolkata Knight Riders,Royal Challengers Bengaluru,3.5,2.6,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rahmanullah Gurbaz,Kolkata Knight Riders,Royal Challengers Bengaluru,4.5,2.9,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rahmanullah Gurbaz,Kolkata Knight Riders,Royal Challengers Bengaluru,4.5,2.9,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Rahul Tripathi,Sunrisers Hyderabad,Mumbai Indians,0.5,1.16,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Rahul Tripathi,Sunrisers Hyderabad,Mumbai Indians,0.5,1.16,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Rahul Tripathi,Sunrisers Hyderabad,Mumbai Indians,1.5,1.54,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Rahul Tripathi,Sunrisers Hyderabad,Mumbai Indians,1.5,1.54,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Rahul Tripathi,Sunrisers Hyderabad,Mumbai Indians,2.5,1.91,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Rahul Tripathi,Sunrisers Hyderabad,Mumbai Indians,2.5,1.91,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Rahul Tripathi,Sunrisers Hyderabad,Mumbai Indians,3.5,2.6,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Rahul Tripathi,Sunrisers Hyderabad,Mumbai Indians,3.5,2.6,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Rahul Tripathi,Sunrisers Hyderabad,Mumbai Indians,4.5,3.95,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Rahul Tripathi,Sunrisers Hyderabad,Mumbai Indians,4.5,3.95,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,Royal Challengers Bangalore,NA,0.5,1.21,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,Royal Challengers Bangalore,NA,0.5,1.21,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,Royal Challengers Bangalore,NA,1.5,1.46,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,Royal Challengers Bangalore,NA,1.5,1.46,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,Royal Challengers Bangalore,NA,2.5,1.99,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,Royal Challengers Bangalore,NA,2.5,1.99,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,Royal Challengers Bangalore,NA,3.5,2.12,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,Royal Challengers Bangalore,NA,3.5,2.12,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,Royal Challengers Bangalore,NA,4.5,2.75,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,Royal Challengers Bangalore,NA,4.5,2.75,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Rishabh Pant,Delhi Capitals,Rajasthan Royals,0.5,1.09,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Rishabh Pant,Delhi Capitals,Rajasthan Royals,0.5,1.09,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Rishabh Pant,Delhi Capitals,Rajasthan Royals,1.5,1.37,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Rishabh Pant,Delhi Capitals,Rajasthan Royals,1.5,1.37,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Rishabh Pant,Delhi Capitals,Rajasthan Royals,2.5,1.86,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Rishabh Pant,Delhi Capitals,Rajasthan Royals,2.5,1.86,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Rishabh Pant,Delhi Capitals,Rajasthan Royals,3.5,2.9,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Rishabh Pant,Delhi Capitals,Rajasthan Royals,3.5,2.9,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Rishabh Pant,Delhi Capitals,Rajasthan Royals,4.5,4,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Rishabh Pant,Delhi Capitals,Rajasthan Royals,4.5,4,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Rohit Sharma,Mumbai Indians,Sunrisers Hyderabad,0.5,1.11,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Rohit Sharma,Mumbai Indians,Sunrisers Hyderabad,0.5,1.11,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Rohit Sharma,Mumbai Indians,Sunrisers Hyderabad,1.5,1.41,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Rohit Sharma,Mumbai Indians,Sunrisers Hyderabad,1.5,1.41,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Rohit Sharma,Mumbai Indians,Sunrisers Hyderabad,2.5,1.75,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Rohit Sharma,Mumbai Indians,Sunrisers Hyderabad,2.5,1.75,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Rohit Sharma,Mumbai Indians,Sunrisers Hyderabad,3.5,2.25,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Rohit Sharma,Mumbai Indians,Sunrisers Hyderabad,3.5,2.25,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Rohit Sharma,Mumbai Indians,Sunrisers Hyderabad,4.5,2.7,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Rohit Sharma,Mumbai Indians,Sunrisers Hyderabad,4.5,2.7,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Sanju Samson,Rajasthan Royals,Delhi Capitals,0.5,1.22,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Sanju Samson,Rajasthan Royals,Delhi Capitals,0.5,1.22,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Sanju Samson,Rajasthan Royals,Delhi Capitals,1.5,1.62,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Sanju Samson,Rajasthan Royals,Delhi Capitals,1.5,1.62,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Sanju Samson,Rajasthan Royals,Delhi Capitals,2.5,2.34,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Sanju Samson,Rajasthan Royals,Delhi Capitals,2.5,2.34,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Sanju Samson,Rajasthan Royals,Delhi Capitals,3.5,3,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Sanju Samson,Rajasthan Royals,Delhi Capitals,3.5,3,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Sanju Samson,Rajasthan Royals,Delhi Capitals,4.5,4.25,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Sanju Samson,Rajasthan Royals,Delhi Capitals,4.5,4.25,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Shai Hope,Delhi Capitals,Rajasthan Royals,0.5,1.15,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Shai Hope,Delhi Capitals,Rajasthan Royals,0.5,1.15,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Shai Hope,Delhi Capitals,Rajasthan Royals,1.5,1.52,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Shai Hope,Delhi Capitals,Rajasthan Royals,1.5,1.52,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Shai Hope,Delhi Capitals,Rajasthan Royals,2.5,2.36,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Shai Hope,Delhi Capitals,Rajasthan Royals,2.5,2.36,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Shai Hope,Delhi Capitals,Rajasthan Royals,3.5,3.9,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Shai Hope,Delhi Capitals,Rajasthan Royals,3.5,3.9,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Shai Hope,Delhi Capitals,Rajasthan Royals,4.5,4.8,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Shai Hope,Delhi Capitals,Rajasthan Royals,4.5,4.8,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Shikhar Dhawan,Punjab Kings,Lucknow Super Giants,0.5,1.09,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Shikhar Dhawan,Punjab Kings,Lucknow Super Giants,0.5,1.09,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Shikhar Dhawan,Punjab Kings,Lucknow Super Giants,1.5,1.26,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Shikhar Dhawan,Punjab Kings,Lucknow Super Giants,1.5,1.26,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Shikhar Dhawan,Punjab Kings,Lucknow Super Giants,2.5,1.64,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Shikhar Dhawan,Punjab Kings,Lucknow Super Giants,2.5,1.64,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Shikhar Dhawan,Punjab Kings,Lucknow Super Giants,3.5,1.98,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Shikhar Dhawan,Punjab Kings,Lucknow Super Giants,3.5,1.98,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 4s,Lucknow Super Giants,Punjab Kings,Shikhar Dhawan,Punjab Kings,Lucknow Super Giants,4.5,2.6,TopSport
+Lucknow Super Giants v Punjab Kings,Number of 6s,Lucknow Super Giants,Punjab Kings,Shikhar Dhawan,Punjab Kings,Lucknow Super Giants,4.5,2.6,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Shimron Hetmyer,Rajasthan Royals,Delhi Capitals,0.5,1.35,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Shimron Hetmyer,Rajasthan Royals,Delhi Capitals,0.5,1.35,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Shimron Hetmyer,Rajasthan Royals,Delhi Capitals,1.5,2,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Shimron Hetmyer,Rajasthan Royals,Delhi Capitals,1.5,2,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Shimron Hetmyer,Rajasthan Royals,Delhi Capitals,2.5,3,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Shimron Hetmyer,Rajasthan Royals,Delhi Capitals,2.5,3,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Shimron Hetmyer,Rajasthan Royals,Delhi Capitals,3.5,4.4,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Shimron Hetmyer,Rajasthan Royals,Delhi Capitals,3.5,4.4,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Shimron Hetmyer,Rajasthan Royals,Delhi Capitals,4.5,5.75,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Shimron Hetmyer,Rajasthan Royals,Delhi Capitals,4.5,5.75,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Shreyas Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,0.5,1.09,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Shreyas Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,0.5,1.09,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Shreyas Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,1.5,1.47,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Shreyas Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,1.5,1.47,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Shreyas Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,2.5,1.96,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Shreyas Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,2.5,1.96,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Shreyas Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,3.5,2.5,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Shreyas Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,3.5,2.5,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Shreyas Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,4.5,3.3,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Shreyas Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,4.5,3.3,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Suryakumar Yadav,Mumbai Indians,Sunrisers Hyderabad,0.5,1.08,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Suryakumar Yadav,Mumbai Indians,Sunrisers Hyderabad,0.5,1.08,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Suryakumar Yadav,Mumbai Indians,Sunrisers Hyderabad,1.5,1.32,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Suryakumar Yadav,Mumbai Indians,Sunrisers Hyderabad,1.5,1.32,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Suryakumar Yadav,Mumbai Indians,Sunrisers Hyderabad,2.5,1.56,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Suryakumar Yadav,Mumbai Indians,Sunrisers Hyderabad,2.5,1.56,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Suryakumar Yadav,Mumbai Indians,Sunrisers Hyderabad,3.5,1.88,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Suryakumar Yadav,Mumbai Indians,Sunrisers Hyderabad,3.5,1.88,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Suryakumar Yadav,Mumbai Indians,Sunrisers Hyderabad,4.5,2.4,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Suryakumar Yadav,Mumbai Indians,Sunrisers Hyderabad,4.5,2.4,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Tilak Varma,Mumbai Indians,Sunrisers Hyderabad,0.5,1.12,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Tilak Varma,Mumbai Indians,Sunrisers Hyderabad,0.5,1.12,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Tilak Varma,Mumbai Indians,Sunrisers Hyderabad,1.5,1.43,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Tilak Varma,Mumbai Indians,Sunrisers Hyderabad,1.5,1.43,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Tilak Varma,Mumbai Indians,Sunrisers Hyderabad,2.5,2.06,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Tilak Varma,Mumbai Indians,Sunrisers Hyderabad,2.5,2.06,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Tilak Varma,Mumbai Indians,Sunrisers Hyderabad,3.5,3.9,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Tilak Varma,Mumbai Indians,Sunrisers Hyderabad,3.5,3.9,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 4s,Sunrisers Hyderabad,Mumbai Indians,Tilak Varma,Mumbai Indians,Sunrisers Hyderabad,4.5,5.5,TopSport
+Sunrisers Hyderabad v Mumbai Indians,Number of 6s,Sunrisers Hyderabad,Mumbai Indians,Tilak Varma,Mumbai Indians,Sunrisers Hyderabad,4.5,5.5,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Venkatesh Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,0.5,1.05,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Venkatesh Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,0.5,1.05,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Venkatesh Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,1.5,1.27,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Venkatesh Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,1.5,1.27,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Venkatesh Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,2.5,1.72,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Venkatesh Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,2.5,1.72,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Venkatesh Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,3.5,2.5,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Venkatesh Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,3.5,2.5,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Venkatesh Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,4.5,2.85,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Venkatesh Iyer,Kolkata Knight Riders,Royal Challengers Bengaluru,4.5,2.85,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,Royal Challengers Bangalore,NA,0.5,1.01,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,Royal Challengers Bangalore,NA,0.5,1.01,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,Royal Challengers Bangalore,NA,1.5,1.17,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,Royal Challengers Bangalore,NA,1.5,1.17,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,Royal Challengers Bangalore,NA,2.5,1.43,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,Royal Challengers Bangalore,NA,2.5,1.43,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,Royal Challengers Bangalore,NA,3.5,1.79,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,Royal Challengers Bangalore,NA,3.5,1.79,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 4s,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,Royal Challengers Bangalore,NA,4.5,2.18,TopSport
+Royal Challengers Bengaluru v Kolkata Knight Riders,Number of 6s,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,Royal Challengers Bangalore,NA,4.5,2.18,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Yashasvi Jaiswal,Rajasthan Royals,Delhi Capitals,0.5,1.05,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Yashasvi Jaiswal,Rajasthan Royals,Delhi Capitals,0.5,1.05,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Yashasvi Jaiswal,Rajasthan Royals,Delhi Capitals,1.5,1.31,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Yashasvi Jaiswal,Rajasthan Royals,Delhi Capitals,1.5,1.31,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Yashasvi Jaiswal,Rajasthan Royals,Delhi Capitals,2.5,1.56,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Yashasvi Jaiswal,Rajasthan Royals,Delhi Capitals,2.5,1.56,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Yashasvi Jaiswal,Rajasthan Royals,Delhi Capitals,3.5,1.81,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Yashasvi Jaiswal,Rajasthan Royals,Delhi Capitals,3.5,1.81,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 4s,Rajasthan Royals,Delhi Capitals,Yashasvi Jaiswal,Rajasthan Royals,Delhi Capitals,4.5,1.96,TopSport
+Rajasthan Royals v Delhi Capitals,Number of 6s,Rajasthan Royals,Delhi Capitals,Yashasvi Jaiswal,Rajasthan Royals,Delhi Capitals,4.5,1.96,TopSport
