@@ -190,6 +190,7 @@ player_runs_alt <-
   ) |>
   mutate(home_team = fix_team_names(home_team),
          away_team = fix_team_names(away_team)) |>
+  mutate(match = paste(home_team, "v", away_team)) |> 
   mutate(opposition_team = case_when(team == home_team ~ away_team,
                                        team == away_team ~ home_team)) |>
   transmute(
@@ -242,6 +243,7 @@ player_wickets_alt <-
   ) |>
   mutate(home = fix_team_names(home),
          away = fix_team_names(away)) |>
+  mutate(match = paste(home, "v", away)) |> 
   mutate(opposition_team = case_when(team == home ~ away,
                                      team == away ~ home)) |>
   transmute(
@@ -290,6 +292,7 @@ player_boundaries_alt <-
   ) |>
   mutate(home = fix_team_names(home),
          away = fix_team_names(away)) |>
+  mutate(match = paste(home, "v", away)) |> 
   mutate(opposition_team = case_when(team == home ~ away,
                                      team == away ~ home)) |>
   mutate(market_name = if_else(str_detect(market_name, "Four"), "Number of 4s", "Number of 6s")) |>
